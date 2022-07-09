@@ -1,0 +1,29 @@
+﻿@model IEnumerable<BuildPage.Models.CalendarModel>
+
+@{
+    ViewData["Title"] = "Kalendarz";
+}
+<h4>Zarezerwuj termin</h4>
+<div class="calendar">
+    <h2>@ViewBag.Month</h2>
+    @for (int i = 1; i <= ViewBag.Calendar; i++)
+    {
+        <a href="@Url.Action("AddToCalendarPage","Home",new { id = i })">
+            
+            <div class="day">
+                @i
+                @foreach (var day in Model)
+                {
+                    if(day.Date.Day == i)
+                    {
+                        <object>
+                            <a href="@Url.Action("DetailsCalendarPage","Home",new { id = day.Id })">
+                                <div>@day.Name</div>
+                            </a>
+                        </object>
+                    }
+                }
+            </div>
+        </a>
+    }
+</div>

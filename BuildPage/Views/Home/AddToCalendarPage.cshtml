@@ -1,0 +1,22 @@
+﻿@model BuildPage.Models.CalendarModel
+
+@{
+    ViewData["Title"] = "Dodaj rezerwację";
+}
+<form asp-action="AddToCalendarPage">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label>Nazwa</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>Godzina</label>
+                <input asp-for="Date" class="form-control" type="time"/>
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Dodaj" class="btn btn-primary" />
+            </div>
+</form>

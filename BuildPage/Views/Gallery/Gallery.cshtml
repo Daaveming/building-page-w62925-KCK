@@ -1,0 +1,32 @@
+﻿@model IEnumerable<BuildPage.Models.ImageModel>
+
+@{
+    ViewData["Title"] = "Galeria";
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.LoginName))
+{
+    <center>
+        <a asp-action="UploadImage" class="btn btn-primary">Dodaj obrazek</a>
+    </center>
+}
+
+
+
+@foreach (var item in Model)
+{
+    <div class="imageGallery">
+        <img src="~/uploads/@Html.DisplayFor(modelItem => item.File)" height="400px" />
+        @{
+            if (!string.IsNullOrEmpty(ViewBag.LoginName))
+            {
+                <a href="@Url.Action("DeleteImage","Gallery",new { id = item.Id })">
+                    <div class="btn btn-danger remv">
+                        Usuń
+                    </div>
+                </a>
+            }
+        }
+
+    </div>
+}

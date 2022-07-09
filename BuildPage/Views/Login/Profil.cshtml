@@ -1,0 +1,40 @@
+﻿@model BuildPage.Models.ChangePassNameModel
+
+@{
+    ViewData["Title"] = "Profil";
+}
+@{
+    @if (Model.IsResponse)
+    {
+        if (Model.IsSuccess)
+        {
+            <div class="alert alert-success">
+                @Model.Message
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-danger">
+                @Model.Message
+            </div>
+        }
+    }
+}
+<h1>Profil</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <b><a class="nav-link text-dark" asp-controller="Login" asp-action="NameUpdate">Zmiana nazwy</a></b>
+        <b><a class="nav-link text-dark" asp-controller="Login" asp-action="PassUpdate">Zmiana hasła</a></b>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" asp-controller="Home">Powrót do strony głównej</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

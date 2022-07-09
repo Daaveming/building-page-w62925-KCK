@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Kalkulatory";
+}
+
+<div class="text-center">
+    <div class="col-md-3">
+        <h2>Obliczanie m<sup>2</sup></h2>
+        <p>Wpisz szerokość <input type="number" id="l1" /></p>
+        <p>Wpisz wysokość <input type="number" id="l2" /></p>
+        <button onclick="oblicz2()">Oblicz</button>
+    </div>
+    <div class="col-md-3">
+        <h2>Obliczanie m<sup>3</sup></h2>
+        <p>Wpisz szerokość <input type="number" id="l4" /></p>
+        <p>Wpisz długość <input type="number" id="l5" /></p>
+        <p>Wpisz wysokość <input type="number" id="l6" /></p>
+        <button onclick="oblicz3()">Oblicz</button>
+    </div>
+    <br />
+    <div class="col-md-2" id="result"></div>
+    <script>
+        function oblicz2(){
+            let wys = document.getElementById("l1").value;
+            let szer = document.getElementById("l2").value;
+
+            let result = wys * szer;
+            document.getElementById("result").innerHTML = "<h2>Wynik: "+result+"</h2>";
+        }
+        function oblicz3(){
+            let wys = document.getElementById("l4").value
+            let dl = document.getElementById("l5").value;
+            let szer = document.getElementById("l6").value;
+
+            let result = wys * dl * szer;
+            document.getElementById("result").innerHTML = "<h2>Wynik: "+result+"</h2>";
+        }
+    </script>
+</div>

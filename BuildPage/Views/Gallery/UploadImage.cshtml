@@ -1,0 +1,38 @@
+﻿@model BuildPage.Models.UploadImageModel
+
+@{
+    ViewData["Title"] = "Dodaj nowe zdjęcie do galerii";
+}
+
+<form asp-action="UploadImage" asp-controller="Gallery" method="post" enctype = "multipart/form-data">
+    @if (Model.IsResponse)
+    {
+        if (Model.IsSuccess)
+        {
+            <div class="alert alert-success">
+                @Model.Message
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-danger">
+                @Model.Message
+            </div>
+        }
+    }
+
+    <div class="row mt-2">
+        <div class="col-12">
+            <label class="col-form-label">Select File</label>
+            <input asp-for="File" class="form-control" />
+            <span asp-validation-for="File" class="text-danger"></span>
+        </div>
+    </div>
+
+
+    <div class="row mt-2">
+        <div class="col-12">
+            <button type="submit" class="btn btn-success">Upload File</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Kontakt";
+}
+
+<div class="container-fluid" id="kontakt">
+    <div class="col-xs-12 col-sm-6 col-lg-6 kontaktLeft">
+        <div class="textLeftBlock">
+            <div class="leftCenterText">
+                <div class="leftCenterPart">
+                    <h2 class="kontaktZNami">Napisz do nas</h2>
+                    <p class="kontaktZNami">
+                        a jesli wolisz, zostaw numer - oddzwonimy.<br><br><strong>Zadzwoń do nas : </strong>
+                        <a href="#" class="kontaktZNami">+48 333 444 999</a> lub <strong>Email</strong>:
+                        <a href="#" class="kontaktZNami">stanleybudowa@gmail.com</a>
+                    </p>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-lg-12">
+                            <form id="kontaktForm" name="kontaktForm" method="post" data-name="KontaktForm">
+                                <div class="row">
+
+                                    <div class="col-xs-12 col-sm-6 col-lg-6">
+                                        <div class="formGrupa">
+                                            <input type="text" id="name" class="form form control" placeholder="Imię" name="name" data-name="Imię" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-6 col-lg-6">
+                                        <div class="formGrupa">
+                                            <input type="email" id="email" class="form form control" placeholder="Email" name="email" data-name="Email" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-6 col-lg-6">
+                                        <div class="formGrupa">
+                                            <input type="tel" id="telefon" class="form form control" placeholder="Telefon" name="telefon" data-name="Telefon" required>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-xs-12 col-sm-12 col-lg-12">
+                                        <div class="formGrupa">
+                                            <textarea id="textArea" class="form textarea form control" placeholder="Wpisz swoją wiadomość" name="message" data-name="textArea" required>
+
+                          </textarea>
+                                        </div>
+                                        <span class="sub-text">* Wymagane pola</span>
+                                    </div>
+                                </div>
+
+                                <button type="submit" id="dodaj" class="btn btn-color">
+                                    Wyślij wiadomość
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <p class="copyright">
+                        Projekt strony DG
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-6 kontaktRight">
+    </div>
+</div>

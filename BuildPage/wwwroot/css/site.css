@@ -1,0 +1,359 @@
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.imageGallery {
+    float: left;
+    margin: 5px;
+}
+
+a:link {
+    color: white;
+    text-decoration: inherit;
+}
+
+.lbl {
+    width: 100%;
+}
+
+.calendar {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 5rem;
+    max-width: 90%;
+}
+
+.day {
+    overflow: auto;
+    padding: 10px;
+    text-align: left;
+    height: 8rem;
+    width: 8rem;
+    float: left;
+    box-shadow: 2px 0 0 0 #888, 0 2px 0 0 #888, 2px 2px 0 0 #888, 2px 0 0 0 #888 inset, 0 2px 0 0 #888 inset;
+}
+
+    .day::-webkit-scrollbar {
+        display: none;
+    }
+
+    .day div {
+        text-align: center;
+        background-color: deepskyblue;
+        display: block;
+        width: 90%;
+        margin: auto;
+        height: auto;
+        padding: 5px;
+        color: black;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+
+    .day:hover {
+        background-color: lightgray;
+    }
+
+.calendar a {
+    color: gray;
+}
+
+.day div:hover {
+    background-color: dodgerblue;
+}
+
+.remv {
+    text-align: center !important;
+    display: block !important;
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgb(10, 10, 10);
+    background-color: rgba(243, 238, 193, 0.1);
+    display: block;
+}
+
+a {
+    color: rgb(226, 227, 235);
+    font-weight: 500;
+}
+
+a:hover {
+    color: rgb(27, 236, 236);
+}
+
+.nav-item {
+    color: cyan;
+}
+
+.header-background {
+    display: block;
+    flex-direction: column;
+    overflow: visible;
+    top: 0;
+    height: auto;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 248, 255, 1.0)));
+    background-image: linear-gradient(180deg, rgba(240, 248, 255, 0.5), rgba(240, 248, 255, 0.7)), url('https://thumbs.dreamstime.com/b/house-under-construction-blueprints-building-project-53360048.jpg');
+    flex-direction: column;
+    background-position: 0px 0px, 100% 50%;
+    background-size: auto, cover;
+    white-space: normal;
+    object-fit: fill;
+    -o-object-fit: fill;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.sticky-nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    padding: 20px;
+    z-index: 1;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    -ms-grid-row-align: auto;
+    align-self: auto;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    background-color: rgba(3, 9, 44, 0.3);
+}
+
+.nav-link.active {
+    color: red;
+}
+
+.navbar-brand {
+    color: rgb(226, 227, 235);
+    font-size: 35px;
+    display: flex;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+}
+
+    .navbar-toggler span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        border: 1px;
+        background: rgb(226, 227, 235);
+    }
+
+        .navbar-toggler span + span {
+            margin-top: 4px;
+            width: 20px;
+        }
+
+            .navbar-toggler span + span + span {
+                width: 20px;
+            }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1.4rem 1rem;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active {
+    color: rgb(226, 227, 235);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active:hover {
+    color: aqua;
+}
+
+#navbarDropdown {
+    color: rgb(226, 235, 234);
+}
+
+#navbarDropdown:hover {
+    color: aqua;
+}
+
+.dropdown-menu {
+    color: aqua;
+    background-color: rgba(95, 158, 160, 1);
+}
+
+.btn-contact {
+    font-size: 20px;
+    padding: 10px 10px;
+    background-color: white;
+}
+
+.btn:hover {
+    background-color: rgb(59, 221, 226);
+}
+
+.heading {
+    color: rgb(79, 79, 215);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    line-height: 1.5;
+    font-size: 65px;
+    font-weight: bolder;
+}
+
+.container-fluid {
+    background-color: cadetblue;
+    margin-right: 10px;
+}
+
+.container-fluid2 {
+    margin-right: 0px;
+}
+
+.column-left {
+    min-height: 800px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(132, 188, 236)));
+    background-image: linear-gradient(180deg, rgba(199, 222, 241, 0.5), rgba(166, 213, 245, 0.7)), url('https://www.corailbtp.com/wp-content/uploads/2019/08/NORMES-DE-CONSTRUCTION.jpg');
+    background-position: 0px 0px, 100% 50%;
+    background-size: auto, cover;
+    background-attachment: scroll, scroll;
+}
+
+.column-right .section-title {
+    color: rgba(0, 0, 255, 0.7);
+    margin-top: 40px;
+    padding: 30px 0px 0px 50px;
+    font-size: 50px;
+}
+
+.column-right .paragraph {
+    color: rgba(0, 0, 255, 0.7);
+    margin-top: 30px;
+    padding: 20px 20px 00px 50px;
+    font-size: 2 0px;
+}
+/*------------------------------------- */
+
+
+.column-right-below {
+    min-height: 800px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(182, 210, 235)));
+    background-image: linear-gradient(180deg, rgba(217, 229, 238, 0.5), rgba(219, 232, 241, 0.7)), url('https://st2.depositphotos.com/1007034/6590/i/600/depositphotos_65903641-stock-photo-home-construction-project.jpg');
+    background-position: 0px 0px, 100% 50%;
+    background-size: auto, cover;
+    background-attachment: scroll, scroll;
+}
+
+.column-left-below .section-title2 {
+    color: rgba(0, 0, 255, 0.7);
+    margin-top: 40px;
+    padding: 30px 0px 0px 50px;
+    font-size: 50px;
+}
+
+.paragraph {
+    text-align: justify;
+}
+
+.paragraph2 {
+    color: rgba(0, 0, 255, 0.7);
+    margin-top: 30px;
+    margin-right: 20px;
+    padding: 20px 5px 30px 50px;
+    font-size: 2 0px;
+    text-align: justify;
+    line-height: 1.3;
+}
+
+.icon1 {
+    padding: 20px 0px 0px 20px;
+    margin: 10px -10px 0px 10px;
+}
+
+.icon2 {
+    margin: 20px 0px 0px 30px;
+}
+
+.tytulUslugi1 {
+    color: rgba(0, 0, 255, 0.7);
+    margin-left: 120px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+.tytulUslugi2 {
+    color: rgba(0, 0, 255, 0.7);
+    margin-left: 120px;
+    margin-top: -25px;
+    margin-bottom: 30px;
+}
+
+.uslugiP1 {
+    color: rgba(0, 0, 255, 0.7);
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.uslugiP2 {
+    color: rgba(0, 0, 255, 0.7);
+    margin-left: 40px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-top: 35px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.kontaktZNami {
+    color: aliceblue;
+}
+
+.btn-color {
+    border-color: cadetblue;
+    border-radius: 40px;
+    margin-left: 500px;
+    margin-bottom: 80px;
+    margin-top: -90px;
+    background-color: white;
+}
+
+.textLeftBlock {
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+.copyright {
+    font-size: small;
+}
